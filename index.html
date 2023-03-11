@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Cafe Site, Homepage</title>
   </head>
-  <body>
+  <body class="h-screen flex flex-col">
     <header class="navbar container mx-auto bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+        <a herf="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a>All Coffee</a></li>
+          <li><a href="/src/all-coffee.html">All Coffee</a></li>
          <!-- <li tabindex="0">
             <a>
               Parent
@@ -24,7 +24,7 @@
               <li><a>Submenu 2</a></li>
             </ul>
           </li>-->
-          <li><a href="./member.html">Members</a></li>
+          <li><a href="/src/member.html">Members</a></li>
           <li><a href="./add-member.html">About Us</a></li>
         </ul>
       </nav>
@@ -72,50 +72,8 @@
       <div class="container mx-auto">
         <h2 class="text-center text-4xl font-bold">Featured Coffee</h2>
         <!--card container-->
-      <div class="flex justify-center flex-wrap gap-6 mt-4">
-        <!--coffee card-->
-        <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-          <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Dippio.jpg" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Doppio
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, voluptate!</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div> 
-              <div class="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </article>
-        <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-          <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Dippio.jpg" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Doppio
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, voluptate!</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div> 
-              <div class="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </article>
-        <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-          <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Dippio.jpg" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Doppio
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, voluptate!</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div> 
-              <div class="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </article>
+      <div id="featured-container" class="flex justify-center flex-wrap gap-6 mt-4">
+       
       </div>
       </div>
     </section>
@@ -125,7 +83,7 @@
       <div class="container mx-auto">
         <h2 class="text-center text-4xl font-bold">Grab your favorite one</h2>
         <!--card container-->
-      <div class="flex justify-center flex-wrap gap-6 mt-4">
+      <div id="pick-container" class="flex justify-center flex-wrap gap-6 mt-4">
         <!--coffee card-->
         <articl class="card w-96 bg-base-100 shadow-xl image-full">
           <figure><img src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1200
@@ -138,31 +96,12 @@
             </div>
           </div>
         </articl>
-        <articl class="card w-96 bg-base-100 shadow-xl image-full">
-          <figure><img src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1200
-            " alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </articl>
-        <articl class="card w-96 bg-base-100 shadow-xl image-full">
-          <figure><img src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1200
-            " alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </articl>
+        
       </div>
       </div>
-      <a href="./all-coffee.html" class="btn  btn-outline">View all items</a>
+      
+      <a href="./all-coffee.html" class="btn btn-outline text-center">View all items</a>
+     
     </section>
 
     <footer class="footer container mx-auto items-center p-4 bg-neutral text-neutral-content mt-8">
@@ -180,5 +119,6 @@
 
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/home.js"></script>
   </body>
 </html>

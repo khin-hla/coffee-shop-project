@@ -9,11 +9,11 @@
   <body>
     <header class="navbar container mx-auto bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+        <a herf="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a>All Coffee</a></li>
+          <li><a href="/src/all-coffee.html">All Coffee</a></li>
          <!-- <li tabindex="0">
             <a>
               Parent
@@ -24,30 +24,30 @@
               <li><a>Submenu 2</a></li>
             </ul>
           </li>-->
-          <li><a>Members</a></li>
-          <li><a>About Us</a></li>
+          <li><a href="/src/member.html">Members</a></li>
+          <li><a href="./add-member.html">About Us</a></li>
         </ul>
       </nav>
     </header>
-   
+
     <section>
        <div class="container mx-auto">
-        <h2>Add a new member</h2>
+        <h2 class="text-center font-bold text-4xl">Add a new member</h2>
         <form class="max-w-md mx-auto">
          <div class="form-control w-full max-w-xs mt-4">
              <label class="label">Name </label>
-             <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+             <input id="name" type="text" placeholder="Type here" required class="input input-bordered w-full max-w-xs" />
              
            </div>
            <div class="form-control w-full max-w-xs mt-4">
-             <label class="label">User Name </label>
-             <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+             <label class="label">Job Title </label>
+             <input id="job" type="text" placeholder="Type here" required class="input input-bordered w-full max-w-xs" />
            </div>
            <div class="form-control w-full max-w-xs mt-4">
              <input type="file" class="file-input file-input-bordered file-input-warning w-full max-w-xs" />
            </div>
           <div class="flex justify-center mt-4">
-            <button class="btn">Add</button>
+            <button id="submit-btn" class="btn">Add</button>
           </div>
         </form>
        </div>
@@ -68,5 +68,6 @@
 
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
+    <script  type="module"  src="./add-member.js"></script>
   </body>
 </html>

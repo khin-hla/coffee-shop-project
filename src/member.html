@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Cafe Site, Members</title>
   </head>
-  <body>
+  <body class="h-screen flex flex-col">
     <header class="navbar container mx-auto bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+        <a herf="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a>All Coffee</a></li>
+          <li><a href="/src/all-coffee.html">All Coffee</a></li>
          <!-- <li tabindex="0">
             <a>
               Parent
@@ -24,13 +24,14 @@
               <li><a>Submenu 2</a></li>
             </ul>
           </li>-->
-          <li><a>Members</a></li>
-          <li><a>About Us</a></li>
+          <li><a href="/src/member.html">Members</a></li>
+          <li><a href="./add-member.html">About Us</a></li>
         </ul>
       </nav>
     </header>
-   
-    <section>
+
+    <main class="grow">
+      <section>
         <h2 class="text-center text-4xl font-bold">Our members</h2>
         <!--member card container-->
         <div class="flex justify-center flex-wrap gap-6 mt-4">
@@ -45,6 +46,7 @@
               </article>
         </div>
     </section>
+    </main>
 
     <footer class="footer container mx-auto items-center p-4 bg-neutral text-neutral-content mt-8">
       <div class="items-center grid-flow-col">
